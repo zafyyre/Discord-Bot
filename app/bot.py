@@ -1,5 +1,5 @@
 import discord
-import responses
+import app.responses as responses
 import os
 from dotenv import load_dotenv
 
