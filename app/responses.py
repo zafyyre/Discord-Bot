@@ -9,7 +9,7 @@ def handle_response(message):
         return "Type a valid command."
     
     elif input == "!help":
-        return "\nThis shows how to use the bot. Type a command with '!<command>' to get started. To send a private message, type '?!<command>'.\t\nThese are the commands below:\n\t-'hello'\n\t-'roll'\n\t-'fact'\n\t-'insult'"
+        return "\nThis shows how to use the bot. Type a command with '!<command>' to get started. To send a private message, type '?!<command>'.\t\nThese are the commands below:\n\t-'hello'\n\t-'roll'\n\t-'fact'\n\t-'compliment'"
 
     elif input == "!hello":
         return "Hey there!"
@@ -24,6 +24,6 @@ def handle_response(message):
 
         return data['text']
     
-    elif input == "!insult":
-        insults = ["you're a loser", "you smell", "you stink"]
+    elif input == "!compliment":
+        insults = ["You're amazing", "You look good today!", "Nothing can stop you!"]
         return str(random.choice(insults))
